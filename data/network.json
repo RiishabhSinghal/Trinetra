@@ -1,0 +1,27 @@
+{
+  "corridors": [
+    {"id": "hormuz", "name": "Strait of Hormuz", "baseline_tankers_per_day": 20, "transit_days_to_india": 4, "chokepoint": true, "lat": 26.6, "lon": 56.3},
+    {"id": "red_sea", "name": "Red Sea / Bab el-Mandeb", "baseline_tankers_per_day": 9, "transit_days_to_india": 9, "chokepoint": true, "lat": 12.6, "lon": 43.3},
+    {"id": "cape", "name": "Cape of Good Hope", "baseline_tankers_per_day": 6, "transit_days_to_india": 21, "chokepoint": false, "lat": -34.4, "lon": 18.5},
+    {"id": "malacca", "name": "Strait of Malacca (eastbound US/LatAm)", "baseline_tankers_per_day": 4, "transit_days_to_india": 28, "chokepoint": true, "lat": 2.5, "lon": 101.0}
+  ],
+  "suppliers": [
+    {"id": "saudi", "name": "Saudi Arabia", "corridor": "hormuz", "current_kbd": 900, "spare_kbd": 250, "grade": {"api": 33, "sulfur": 1.8}, "fob_premium_usd": 0.0, "lat": 24.0, "lon": 45.0},
+    {"id": "iraq", "name": "Iraq (Basrah)", "corridor": "hormuz", "current_kbd": 1050, "spare_kbd": 120, "grade": {"api": 30, "sulfur": 2.9}, "fob_premium_usd": -1.2, "lat": 30.5, "lon": 47.8},
+    {"id": "uae", "name": "UAE (Murban, Fujairah bypass)", "corridor": "hormuz", "current_kbd": 380, "spare_kbd": 300, "grade": {"api": 40, "sulfur": 0.7}, "fob_premium_usd": 1.1, "bypass_available_kbd": 300, "lat": 24.4, "lon": 54.4},
+    {"id": "russia", "name": "Russia (Urals, via Cape/Suez mix)", "corridor": "red_sea", "current_kbd": 1600, "spare_kbd": 100, "grade": {"api": 31, "sulfur": 1.7}, "fob_premium_usd": -4.0, "sanctions_watch": true, "lat": 55.0, "lon": 37.6},
+    {"id": "wafrica", "name": "West Africa (Nigeria/Angola)", "corridor": "cape", "current_kbd": 350, "spare_kbd": 400, "grade": {"api": 34, "sulfur": 0.3}, "fob_premium_usd": 2.2, "lat": 6.5, "lon": 3.4},
+    {"id": "usgulf", "name": "US Gulf (WTI/Mars)", "corridor": "cape", "current_kbd": 280, "spare_kbd": 350, "grade": {"api": 39, "sulfur": 0.4}, "fob_premium_usd": 2.8, "lat": 29.7, "lon": -95.3},
+    {"id": "latam", "name": "Latin America (Brazil/Guyana)", "corridor": "cape", "current_kbd": 220, "spare_kbd": 260, "grade": {"api": 29, "sulfur": 0.6}, "fob_premium_usd": 1.9, "lat": -22.9, "lon": -43.2},
+    {"id": "kuwait", "name": "Kuwait", "corridor": "hormuz", "current_kbd": 320, "spare_kbd": 80, "grade": {"api": 31, "sulfur": 2.5}, "fob_premium_usd": -0.5, "lat": 29.3, "lon": 47.9}
+  ],
+  "freight_usd_per_bbl": {"hormuz": 1.4, "red_sea": 2.1, "cape": 3.6, "malacca": 4.2},
+  "refineries": [
+    {"id": "jamnagar", "name": "Jamnagar (RIL)", "capacity_kbd": 1240, "min_utilization": 0.70, "grade_window": {"api_min": 26, "api_max": 42, "sulfur_max": 3.2}, "lat": 22.3, "lon": 69.1},
+    {"id": "vadinar", "name": "Vadinar (Nayara)", "capacity_kbd": 405, "min_utilization": 0.65, "grade_window": {"api_min": 27, "api_max": 40, "sulfur_max": 3.0}, "lat": 22.4, "lon": 69.7},
+    {"id": "paradip", "name": "Paradip (IOCL)", "capacity_kbd": 300, "min_utilization": 0.65, "grade_window": {"api_min": 28, "api_max": 41, "sulfur_max": 2.8}, "lat": 20.3, "lon": 86.6},
+    {"id": "kochi", "name": "Kochi (BPCL)", "capacity_kbd": 310, "min_utilization": 0.65, "grade_window": {"api_min": 28, "api_max": 42, "sulfur_max": 2.6}, "lat": 9.9, "lon": 76.3},
+    {"id": "panipat", "name": "Panipat (IOCL)", "capacity_kbd": 300, "min_utilization": 0.65, "grade_window": {"api_min": 29, "api_max": 40, "sulfur_max": 2.4}, "lat": 29.4, "lon": 76.9},
+    {"id": "vizag", "name": "Visakhapatnam (HPCL)", "capacity_kbd": 300, "min_utilization": 0.65, "grade_window": {"api_min": 28, "api_max": 41, "sulfur_max": 2.7}, "lat": 17.7, "lon": 83.2}
+  ]
+}
